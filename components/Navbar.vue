@@ -3,6 +3,7 @@
   <v-app-bar
   flat
   outlined
+  app
  
 >
       <v-list-item class="d-flex justify-space-between">
