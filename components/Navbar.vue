@@ -6,7 +6,10 @@
  
 >
       <v-list-item class="d-flex justify-space-between">
+         <nuxt-link to="/" style="text-decoration: none;">
      <v-list-item-title class="logo">tix.africa</v-list-item-title>
+        
+      </nuxt-link>
      <v-list-item-title>
        
      </v-list-item-title>

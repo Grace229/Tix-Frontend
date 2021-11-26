@@ -1,6 +1,17 @@
 <template>
-  <div class="py-0 mb-10 mx-auto" style="max-width: 867px; overflow: hidden">
+<div>
+   <div class="d-flex justify-space-between align-center my-10" style="width: 300px">
+       <nuxt-link to="/" style="text-decoration: none;">
+         <svg xmlns="http://www.w3.org/2000/svg" class="secondary--text ml-5 icons" style="height: 45px; width: 45px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+</svg>
+      </nuxt-link>
+      
+<p class="font-weight-bold text-h5 mt-4"> {{productDetails[0].productName}}</p>
+    </div>
+ <div class="py-0 mb-10 mx-auto" style="max-width: 867px; overflow: hidden">
     <v-row class="mt-md-3">
+      
       <v-col class="pa-0 pa-md-3" cols="12" md="7">
         <v-card elevation="0" class="two-cards" height="max-content"> 
               <img :src="productDetails[0].productImage" aspect-ratio="1"  class="two-cards-sheet" /> 
@@ -14,7 +25,7 @@
         >
           <div class="">
             <p
-              class="text-h6 font-weight-bold pb-0 mb-0"
+              class="text-h6 font-weight-bold pb-0 mb-4"
               style="line-height: 1.13; letter-spacing: 0.15px"
             >
              {{productDetails[0].productName}}
@@ -90,6 +101,8 @@
       </v-expansion-panels>
     </v-row>
   </div>
+</div>
+ 
 </template>
 
 <script>
@@ -187,6 +200,9 @@ methods: {
     text-align: left;
     color: #1592e6;
   }
+}
+.icons:hover{
+  color: #fc6435 !important;
 }
 .two-cards-sheet {
   width: 100%;
